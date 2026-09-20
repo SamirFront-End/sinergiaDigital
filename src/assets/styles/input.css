@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+    /* DICCCIONARIO DE FUENTES */
+    --font-encabezados: 'Montserrat', sans-serif;
+    --font-titulos: 'Manrope', sans-serif;
+    --font-hero: 'Space Grotesk', sans-serif;
+
+    /* PALETA DE COLORES */
+    --color-principal: #107CB3;
+    --color-secundario: #26A5C4;
+    --color-fondoBlanco: #FDFDFD;
+    --color-textoFuerte: #033898;
+    --color-textoSecundario: #0756AB;
+    --color-superficie: #E9F4F7;
+}
