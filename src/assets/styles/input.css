@@ -42,10 +42,10 @@
 @utility smallText {
     font: 400 15px/1.45 "Montserrat", sans-serif;
 }
-@utility cta {
+@utility textCta {
     font: 600 16px/1 "Montserrat", sans-serif;
 }
-@utility nav {
+@utility textNav {
     font: 500 16px/1.2 "Montserrat", sans-serif;
 }
 @utility numbers {
