@@ -57,3 +57,9 @@
 @utility footerText {
     font: 400 14px/1.5 "Montserrat", sans-serif;
 }
+
+@media (max-width:428px) {
+    .subTitleHero {
+        font: 500 17px/1.5 "Montserrat", sans-serif;
+    }
+}
