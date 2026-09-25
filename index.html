@@ -14,16 +14,16 @@
             <div class="">
                 <img src="./src/assets/images/logo_sinergia-digital.png" alt="" class="w-16 cursor-pointer">
             </div>
-            <ul class="hidden md:flex justify-center md:gap-4 *:font-sans font-thin text-white text-sm box-border">
+            <ul class="hidden md:flex justify-center md:gap-8 textNav *:font-sans font-thin text-white text-sm box-border">
                 <li class="relative cursor-pointer before:content[''] before:absolute before:top-6 before:left-1/2 before:translate-x-0 before:h-0.5 before:w-0 before:bg-white before:transition-all before:duration-300 hover:font-bold hover:transition-all hover:duration-300 hover:before:w-full hover:before:left-0">Nosotros</li>
                 <li class="relative cursor-pointer before:content[''] before:absolute before:top-6 before:left-1/2 before:translate-x-0 before:h-0.5 before:w-0 before:bg-white before:transition-all before:duration-300 hover:font-bold hover:transition-all hover:duration-300 hover:before:w-full hover:before:left-0">Portafolio</li>
                 <li class="relative cursor-pointer before:content[''] before:absolute before:top-6 before:left-1/2 before:translate-x-0 before:h-0.5 before:w-0 before:bg-white before:transition-all before:duration-300 hover:font-bold hover:transition-all hover:duration-300 hover:before:w-full hover:before:left-0">Servicios</li>
             </ul>
             <div class="w-[90%] flex justify-end items-center ">
-                <a href="#" class="bg-principal w-[60%] p-1 rounded-sm font-encabezados text-sm text-fondoBlanco text-center transition-all duration-200 hover:font-semibold hover:bg-secundario">Contacto</a>
+                <a href="#" class="bg-principal w-[60%] p-1 rounded-sm font-encabezados text-sm text-fondoBlanco text-center transition-all duration-200 hover:font-semibold hover:bg-secundario hover:border hover:border-white">Contacto</a>
             </div>
         </nav>
-        <div class="nav-mobile bg-[color-mix(in_srgb,var(--color-textoFuerte)_50%,transparent)] md:hidden sticky top-1/1 w-1/1 flex flex-row justify-center gap-3 p-2 *:w-2/4 *:flex *:gap-1 *:flex-col *:items-center *:cursor-pointer *:transition-all *:duration-500 *:hover:text-fondoBlanco *:hover:font-semibold">
+        <div class="nav-mobile bg-[color-mix(in_srgb,var(--color-textoFuerte)_50%,transparent)] textNav md:hidden sticky top-1/1 w-1/1 flex flex-row justify-center gap-3 p-2 *:w-2/4 *:flex *:gap-1 *:flex-col *:items-center *:cursor-pointer *:transition-all *:duration-500 *:hover:text-fondoBlanco *:hover:font-semibold">
             <div class="items-nav ">
                 <ion-icon name="person-outline"></ion-icon>
                 <a href="#">Nosotros</a>
@@ -37,9 +37,24 @@
                 <a href="#">Servicios</a>
             </div>
         </div>
-        <a class="sticky top-3/4 left-[90%] container-whatsapp bg-principal w-8 h-8 rounded-full grid justify-center content-center text-[26px] cursor-pointer hover:bg-secundario transition-all duration-500" href="https://web.whatsapp.com/" target="_blank">
-            <ion-icon class="text-fondoBlanco te" name="logo-whatsapp"></ion-icon>
+        <a class="sticky top-3/4 lg:top-[90%]  left-[90%] bg-principal w-8 h-8 rounded-full grid justify-center content-center text-[26px] cursor-pointer hover:bg-secundario transition-all duration-500 hover:border hover:border-white md:left-[94%] lg:left-[96%]" href="https://web.whatsapp.com/" target="_blank">
+            <ion-icon class="text-fondoBlanco" name="logo-whatsapp"></ion-icon>
         </a>
+        <div class="container-hero absolute max-[321px]:top-24 flex flex-col gap-6 lg:top-64">
+            <h1 class="title-hero lg:h1TitleHero text-superficie text-center text-4xl font-hero ">
+                <span class="font-bold">Lleva tu negocio</span> al siguiente nivel con una <span class="font-bold">presencia web que vende</span> y <span class="font-bold">organiza tu éxito</span>.
+            </h1>
+            <h2 class="subTitle-hero max-[321px]:hidden block subTitleHero text-center text-superficie">
+                Digitalizamos tu negocio con sistemas de gestión interna y sitios web de alto impacto. Menos caos, más clientes.
+            </h2>
+            <div class="container-btn-cta w-full flex justify-center ">
+                <a href="#" target="_blank" class="btn-cta bg-principal text-fondoBlanco p-2 rounded-sm transition-all duration-200 hover:bg-secundario hover:border">
+                ¡Digitaliza tu negocio ahora!
+            </a>
+            </div>
+        </div>
+        
+        
     </header>
 </body>
 </html>
