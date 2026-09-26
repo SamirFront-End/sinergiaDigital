@@ -10,7 +10,7 @@
 </head>
 <body>
 <header class="h-screen bg-[url('/src/assets/images/cubo.jpg')] bg-cover bg-no-repeat bg-center relative">
-        <nav class="grid grid-cols-2 gap-9 md:grid-cols-[20%_60%_20%] md:gap-0 justify-center items-center">
+        <nav class="fixed z-10 w-full grid grid-cols-2 gap-9 md:grid-cols-[20%_60%_20%] md:gap-0 justify-center items-center">
             <div class="">
                 <img src="./src/assets/images/logo_sinergia-digital.png" alt="" class="w-16 cursor-pointer">
             </div>
@@ -23,7 +23,7 @@
                 <a href="#" class="bg-principal w-[60%] p-1 rounded-sm font-encabezados text-sm text-fondoBlanco text-center transition-all duration-200 hover:font-semibold hover:bg-secundario hover:border hover:border-white">Contacto</a>
             </div>
         </nav>
-        <div class="nav-mobile bg-[color-mix(in_srgb,var(--color-textoFuerte)_50%,transparent)] textNav md:hidden sticky top-1/1 w-1/1 flex flex-row justify-center gap-3 p-2 *:w-2/4 *:flex *:gap-1 *:flex-col *:items-center *:cursor-pointer *:transition-all *:duration-500 *:hover:text-fondoBlanco *:hover:font-semibold">
+        <div class="nav-mobile bg-[color-mix(in_srgb,var(--color-textoFuerte)_50%,transparent)] textNav md:hidden fixed bottom-0 w-1/1 flex flex-row justify-center gap-3 p-2 *:w-2/4 *:flex *:gap-1 *:flex-col *:items-center *:cursor-pointer *:transition-all *:duration-500 *:hover:text-fondoBlanco *:hover:font-semibold">
             <div class="items-nav ">
                 <ion-icon name="person-outline"></ion-icon>
                 <a href="#">Nosotros</a>
@@ -37,10 +37,10 @@
                 <a href="#">Servicios</a>
             </div>
         </div>
-        <a class="sticky top-3/4 md:top-[90%] left-[90%] bg-principal w-8 md:w-12 lg:w-8 h-8 md:h-12 lg:h-8 rounded-full grid justify-center content-center text-[26px] cursor-pointer hover:bg-secundario transition-all duration-500 hover:border hover:border-white md:left-[94%] lg:left-[96%]" href="https://web.whatsapp.com/" target="_blank">
+        <a class="fixed top-[83%] md:top-[90%] left-[90%] bg-principal w-8 md:w-12 lg:w-8 h-8 md:h-12 lg:h-8 rounded-full grid justify-center content-center text-[26px] cursor-pointer hover:bg-secundario transition-all duration-500 hover:border hover:border-white md:left-[94%] lg:left-[96%]" href="https://web.whatsapp.com/" target="_blank">
             <ion-icon class="text-fondoBlanco md:text-[44px] lg:text-[32px]" name="logo-whatsapp"></ion-icon>
         </a>
-        <div class="container-hero absolute max-[321px]:top-24 flex flex-col gap-6 md:top-60 lg:top-64">
+        <div class="container-hero absolute min-[321px]:top-36 flex flex-col gap-6 md:top-60 lg:top-64">
             <h1 class="title-hero md:h1TitleHero text-superficie text-center text-4xl font-hero ">
                 <span class="font-bold">Lleva tu negocio</span> al siguiente nivel con una <span class="font-bold">presencia web que vende</span> y <span class="font-bold">organiza tu éxito</span>.
             </h1>
@@ -53,8 +53,20 @@
             </a>
             </div>
         </div>
-        
-        
     </header>
+    <section class="us">
+        <div class="col-text-us flex-col items-center">
+            <h1 class="title-us h1TitleSections m-12 text-center">
+            Nosotros.
+            </h1>
+            <p class="text-us textBody text-center w-11/12 m-auto">
+                En Sinergia Digital, impulsamos el crecimiento de las Pymes colombianas convirtiendo la tecnología en su mejor aliada. Somos expertos en diseñar soluciones web profesionales y sistemas de gestión interna que profesionalizan tu negocio, optimizan tus procesos y fortalecen tu presencia en el mercado. No solo creamos sitios web; construimos el puente digital que conecta tu pasión con resultados comerciales reales y un acompañamiento técnico constante.
+            </p>
+        </div>
+        <div class="col-img-us">
+            <img src="/src/assets/images/business.jpg" alt="" class="img-us w-9/12 m-auto mt-8">
+        </div>
+        
+    </section>
 </body>
 </html>
