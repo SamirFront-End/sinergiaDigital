@@ -12,10 +12,10 @@
 <header class="h-screen bg-[url('/src/assets/images/cubo.jpg')] bg-cover bg-no-repeat bg-center relative">
         <nav class="fixed z-10 w-full grid grid-cols-2 gap-9 md:grid-cols-[20%_60%_20%] md:gap-0 justify-center items-center">
             <div class="">
-                <img src="./src/assets/images/logo_sinergia-digital.png" alt="" class="w-16 cursor-pointer">
+                <img src="./src/assets/images/logo_sinergia-digital.png" alt="Sinergia Digital" class="w-16 cursor-pointer">
             </div>
             <ul class="hidden md:flex justify-center md:gap-8 textNav *:font-sans font-thin text-white text-sm box-border">
-                <li class="relative cursor-pointer before:content[''] before:absolute before:top-6 before:left-1/2 before:translate-x-0 before:h-0.5 before:w-0 before:bg-white before:transition-all before:duration-300 hover:font-bold hover:transition-all hover:duration-300 hover:before:w-full hover:before:left-0">Nosotros</li>
+                <li class="relative cursor-pointer before:content[''] before:absolute before:top-6 before:left-1/2 before:translate-x-0 before:h-0.5 before:w-0 before:bg-white before:transition-all before:duration-300 hover:font-bold hover:transition-all hover:duration-300 hover:before:w-full hover:before:left-0"><a href="#Nosotros">Nosotros</a></li>
                 <li class="relative cursor-pointer before:content[''] before:absolute before:top-6 before:left-1/2 before:translate-x-0 before:h-0.5 before:w-0 before:bg-white before:transition-all before:duration-300 hover:font-bold hover:transition-all hover:duration-300 hover:before:w-full hover:before:left-0">Portafolio</li>
                 <li class="relative cursor-pointer before:content[''] before:absolute before:top-6 before:left-1/2 before:translate-x-0 before:h-0.5 before:w-0 before:bg-white before:transition-all before:duration-300 hover:font-bold hover:transition-all hover:duration-300 hover:before:w-full hover:before:left-0">Servicios</li>
             </ul>
@@ -26,7 +26,7 @@
         <div class="nav-mobile bg-[color-mix(in_srgb,var(--color-textoFuerte)_50%,transparent)] textNav md:hidden fixed bottom-0 w-1/1 flex flex-row justify-center gap-3 p-2 *:w-2/4 *:flex *:gap-1 *:flex-col *:items-center *:cursor-pointer *:transition-all *:duration-500 *:hover:text-fondoBlanco *:hover:font-semibold">
             <div class="items-nav ">
                 <ion-icon name="person-outline"></ion-icon>
-                <a href="#">Nosotros</a>
+                <a href="#Nosotros">Nosotros</a>
             </div>
             <div class="items-nav">
                 <ion-icon name="extension-puzzle-outline"></ion-icon>
@@ -54,19 +54,36 @@
             </div>
         </div>
     </header>
-    <section class="us bg-secundario pt-10 lg:w-full md:grid md:grid-cols-2 md:justify-center md:items-center">
+    <section id="Nosotros" class="us bg-secundario pt-10 pb-10 lg:w-full md:grid md:grid-cols-2 md:justify-center md:items-center">
         <div class="col-text-us flex-col items-center">
             <h1 class="title-us h1TitleSections m-12 text-center">
             Nosotros.
             </h1>
-            <p class="text-us textBody text-center w-11/12 m-auto">
+            <p class="text-us sectionIntroduction text-center w-11/12 m-auto">
                 En Sinergia Digital, impulsamos el crecimiento de las Pymes colombianas convirtiendo la tecnología en su mejor aliada. Somos expertos en diseñar soluciones web profesionales y sistemas de gestión interna que profesionalizan tu negocio, optimizan tus procesos y fortalecen tu presencia en el mercado. No solo creamos sitios web; construimos el puente digital que conecta tu pasión con resultados comerciales reales y un acompañamiento técnico constante.
             </p>
         </div>
         <div class="col-img-us lg:w-3/4 lg:m-auto">
-            <img src="/src/assets/images/business.jpg" alt="" class="img-us w-9/12 m-auto mt-8">
+            <img src="/src/assets/images/business.jpg" alt="Negocio" class="img-us w-9/12 m-auto mt-8">
         </div>
-        
+    </section>
+    <section id="Portafolio" class="bg-fondoBlanco pt-10 pb-10 flex flex-col items-center">
+        <h1 class="title-section-portafolio h1TitleSections m-12 text-center">
+            Portafolio
+        </h1>
+        <div class="container-proyects w-[95%]">
+            <div class="img-proyect-one w-[80%] m-auto">
+                <img src="/src/assets/images/logo_sinergia-digital.png" alt="Sinergia Digital">
+            </div>
+            <div class="proyect-one flex flex-col items-center gap-6">
+                <h2 class="title-proyect-one serviceCardTitle text-center">
+                    Sinergia Digital
+                </h2>
+                <p class="description-proyect-one sectionIntroduction text-center">
+                    Diseño y desarrollo de una plataforma web de alta velocidad y 100% responsiva, integrada con panel de control dinámico y sincronización en tiempo real con Google Business. Un ecosistema digital completo que centraliza la captación de clientes y automatiza la gestión interna sin fricciones.
+                </p>
+            </div>
+        </div>
     </section>
 </body>
 </html>
