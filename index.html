@@ -10,7 +10,7 @@
 </head>
 <body>
 <header class="h-screen bg-[url('/src/assets/images/cubo.jpg')] bg-cover bg-no-repeat bg-center relative">
-        <nav class="fixed z-10 w-full grid grid-cols-2 gap-9 md:grid-cols-[20%_60%_20%] md:gap-0 justify-center items-center">
+        <nav class="fixed z-10 w-full grid grid-cols-2 gap-9 md:grid-cols-[20%_60%_20%] md:gap-0 justify-center items-center bg-[color-mix(in_srgb,var(--color-textoSecundario)_50%,transparent)]">
             <div class="">
                 <img src="./src/assets/images/logo_sinergia-digital.png" alt="Sinergia Digital" class="w-16 cursor-pointer">
             </div>
@@ -23,7 +23,7 @@
                 <a href="#" class="bg-principal w-[60%] p-1 rounded-sm font-encabezados text-sm text-fondoBlanco text-center transition-all duration-200 hover:font-semibold hover:bg-secundario hover:border hover:border-white">Contacto</a>
             </div>
         </nav>
-        <div class="nav-mobile bg-[color-mix(in_srgb,var(--color-textoFuerte)_50%,transparent)] textNav md:hidden fixed bottom-0 w-1/1 flex flex-row justify-center gap-3 p-2 *:w-2/4 *:flex *:gap-1 *:flex-col *:items-center *:cursor-pointer *:transition-all *:duration-500 *:hover:text-fondoBlanco *:hover:font-semibold">
+        <div class="nav-mobile bg-[color-mix(in_srgb,var(--color-textoFuerte)_50%,transparent)] textNav md:hidden fixed bottom-0 w-1/1 flex flex-row justify-center gap-3 p-2 *:w-2/4 *:flex *:gap-1 *:flex-col *:items-center *:cursor-pointer *:transition-all *:duration-500 *:hover:text-fondoBlanco *:hover:font-semibold z-10">
             <div class="items-nav ">
                 <ion-icon name="person-outline"></ion-icon>
                 <a href="#Nosotros">Nosotros</a>
@@ -54,17 +54,43 @@
             </div>
         </div>
     </header>
-    <section id="Nosotros" class="us bg-secundario pt-10 pb-10 lg:w-full md:grid md:grid-cols-2 md:justify-center md:items-center">
-        <div class="col-text-us flex-col items-center">
-            <h1 class="title-us h1TitleSections m-12 text-center">
+    <section id="Nosotros" class="us bg-linear-to-b from-[#004A7F] via-[#00669D] to-[#0A82B8] pt-10 pb-10 lg:w-full md:grid md:grid-cols-2 md:justify-center md:items-center">
+        <div class="col-text-us flex flex-col">
+            <h1 class="title-us h1TitleSections m-12 text-center text-superficie">
             Nosotros.
             </h1>
-            <p class="text-us sectionIntroduction text-center w-11/12 m-auto">
+            <p class="text-us sectionIntroduction text-center w-11/12 m-auto text-superficie">
                 En Sinergia Digital, impulsamos el crecimiento de las Pymes colombianas convirtiendo la tecnología en su mejor aliada. Somos expertos en diseñar soluciones web profesionales y sistemas de gestión interna que profesionalizan tu negocio, optimizan tus procesos y fortalecen tu presencia en el mercado. No solo creamos sitios web; construimos el puente digital que conecta tu pasión con resultados comerciales reales y un acompañamiento técnico constante.
             </p>
+            <div class="items-us grid grid-cols-[75%] justify-center gap-6 md:flex md:flex-3 md:justify-center md:gap-3 pt-10 md:pb-10">
+                <div class="card-us md:w-[30%] flex flex-col lg:pt-2 lg:pb-2 items-center lg: gap-2 bg-[color-mix(in_srgb,var(--color-superficie)_15%,transparent)] rounded-xs">
+                    <div class="container-icon-us">
+                        <ion-icon class="icon-card-us text-superficie text-8xl md:text-5xl" name="cloud-done-outline"></ion-icon>
+                    </div>
+                    <h2 class="title-card-us text-center serviceCardTitle pb-1 text-superficie md:highlightTextBody">
+                        Soluciones Web Profesionales
+                    </h2>
+                </div>
+                <div class="card-us md:w-[30%] flex flex-col lg:pt-2 lg:pb-2 items-center lg: gap-2 bg-[color-mix(in_srgb,var(--color-superficie)_15%,transparent)] rounded-xs">
+                    <div class="container-icon-us">
+                        <ion-icon class="icon-card-us text-superficie text-8xl md:text-5xl" name="cube-outline"></ion-icon>
+                    </div>
+                    <h2 class="title-card-us text-center serviceCardTitle pb-1 text-superficie md:highlightTextBody">
+                        Sistemas de Gestión Interna
+                    </h2>
+                </div>
+                <div class="card-us md:w-[30%] flex flex-col lg:pt-2 lg:pb-2 items-center lg: gap-2 bg-[color-mix(in_srgb,var(--color-superficie)_15%,transparent)] rounded-xs">
+                    <div class="container-icon-us">
+                        <ion-icon class="icon-card-us text-superficie text-8xl md:text-5xl" name="globe-outline"></ion-icon>
+                    </div>
+                    <h2 class="title-card-us text-center serviceCardTitle pb-1 text-superficie md:highlightTextBody">
+                        Presencia en Línea
+                    </h2>
+                </div>
+            </div>
         </div>
-        <div class="col-img-us lg:w-3/4 lg:m-auto">
-            <img src="/src/assets/images/business.jpg" alt="Negocio" class="img-us w-9/12 m-auto mt-8">
+        <div class="hidden md:block col-img-us md:w-3/4 md:m-auto">
+            <img src="/src/assets/images/business.jpg" alt="Negocio" class="img-us w-9/12 m-auto">
         </div>
     </section>
     <section id="Portafolio" class="bg-fondoBlanco pt-10 pb-10 flex flex-col items-center">
