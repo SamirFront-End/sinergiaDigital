@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="module" src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.js"></script>
+    <script src="https://kit.fontawesome.com/76750b34bb.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./src/assets/styles/input.css">
     <title>Sinergia Digital</title>
 </head>
 <body>
-<header class="h-screen bg-[url('/src/assets/images/cubo.jpg')] bg-cover bg-no-repeat bg-center relative">
-        <nav class="fixed z-10 w-full grid grid-cols-2 gap-9 md:grid-cols-[20%_60%_20%] md:gap-0 justify-center items-center bg-[color-mix(in_srgb,var(--color-textoSecundario)_50%,transparent)]">
-            <div class="">
+<header id="#Home" class="h-screen bg-[url('/src/assets/images/cubo.jpg')] bg-cover bg-no-repeat bg-center relative">
+        <nav class="fixed z-10 w-full grid grid-cols-2 gap-9 md:grid-cols-[20%_60%_20%] md:gap-0 justify-center items-center bg-[color-mix(in_srgb,var(--color-textoSecundario)_50%,transparent)] backdrop-blur-sm">
+            <div class="container-logo-sinergiaDital">
                 <img src="./src/assets/images/logo_sinergia-digital.png" alt="Sinergia Digital" class="w-16 cursor-pointer">
             </div>
             <ul class="hidden md:flex justify-center md:gap-8 textNav *:font-sans font-thin text-white text-sm box-border">
@@ -23,7 +24,7 @@
                 <a href="#" class="bg-principal w-[60%] p-1 rounded-sm font-encabezados text-sm text-fondoBlanco text-center transition-all duration-200 hover:font-semibold hover:bg-secundario hover:border hover:border-white">Contacto</a>
             </div>
         </nav>
-        <div class="nav-mobile bg-[color-mix(in_srgb,var(--color-textoFuerte)_50%,transparent)] textNav md:hidden fixed bottom-0 w-1/1 flex flex-row justify-center gap-3 p-2 *:w-2/4 *:flex *:gap-1 *:flex-col *:items-center *:cursor-pointer *:transition-all *:duration-500 *:hover:text-fondoBlanco *:hover:font-semibold z-10">
+        <div class="nav-mobile bg-[color-mix(in_srgb,var(--color-textoFuerte)_50%,transparent)] backdrop-blur-md textNav md:hidden fixed bottom-0 w-1/1 flex flex-row justify-center gap-3 p-2 *:w-2/4 *:flex *:gap-1 *:flex-col *:items-center *:cursor-pointer *:transition-all *:duration-500 *:hover:text-fondoBlanco *:hover:font-semibold z-50">
             <div class="items-nav ">
                 <ion-icon name="person-outline"></ion-icon>
                 <a href="#Nosotros">Nosotros</a>
@@ -37,7 +38,7 @@
                 <a href="#">Servicios</a>
             </div>
         </div>
-        <a class="fixed top-[83%] md:top-[90%] left-[90%] bg-principal w-8 md:w-12 lg:w-8 h-8 md:h-12 lg:h-8 rounded-full grid justify-center content-center text-[26px] cursor-pointer hover:bg-secundario transition-all duration-500 hover:border hover:border-white md:left-[94%] lg:left-[96%]" href="https://web.whatsapp.com/" target="_blank">
+        <a class="fixed z-30 top-[83%] md:top-[90%] left-[90%] bg-principal w-8 md:w-12 lg:w-8 h-8 md:h-12 lg:h-8 rounded-full grid justify-center content-center text-[26px] cursor-pointer hover:bg-secundario transition-all duration-500 hover:border hover:border-white md:left-[94%] lg:left-[96%]" href="https://web.whatsapp.com/" target="_blank">
             <ion-icon class="text-fondoBlanco md:text-[44px] lg:text-[32px]" name="logo-whatsapp"></ion-icon>
         </a>
         <div class="container-hero absolute min-[321px]:top-36 flex flex-col gap-6 md:top-60 lg:top-64">
@@ -63,7 +64,7 @@
                 En Sinergia Digital, impulsamos el crecimiento de las Pymes colombianas convirtiendo la tecnología en su mejor aliada. Somos expertos en diseñar soluciones web profesionales y sistemas de gestión interna que profesionalizan tu negocio, optimizan tus procesos y fortalecen tu presencia en el mercado. No solo creamos sitios web; construimos el puente digital que conecta tu pasión con resultados comerciales reales y un acompañamiento técnico constante.
             </p>
             <div class="items-us grid grid-cols-[75%] justify-center gap-6 md:flex md:flex-3 md:justify-center md:gap-3 pt-10 md:pb-10">
-                <div class="card-us md:w-[30%] flex flex-col lg:pt-2 lg:pb-2 items-center lg: gap-2 bg-[color-mix(in_srgb,var(--color-superficie)_15%,transparent)] rounded-xs">
+                <div class="card-us md:w-[30%] flex flex-col lg:pt-2 lg:pb-2 items-center lg: gap-2 bg-secundario shadow-sm shadow-black rounded-xs">
                     <div class="container-icon-us">
                         <ion-icon class="icon-card-us text-superficie text-8xl md:text-5xl" name="cloud-done-outline"></ion-icon>
                     </div>
@@ -71,7 +72,7 @@
                         Soluciones Web Profesionales
                     </h2>
                 </div>
-                <div class="card-us md:w-[30%] flex flex-col lg:pt-2 lg:pb-2 items-center lg: gap-2 bg-[color-mix(in_srgb,var(--color-superficie)_15%,transparent)] rounded-xs">
+                <div class="card-us md:w-[30%] flex flex-col lg:pt-2 lg:pb-2 items-center lg: gap-2 bg-secundario shadow-sm shadow-black rounded-xs">
                     <div class="container-icon-us">
                         <ion-icon class="icon-card-us text-superficie text-8xl md:text-5xl" name="cube-outline"></ion-icon>
                     </div>
@@ -79,7 +80,7 @@
                         Sistemas de Gestión Interna
                     </h2>
                 </div>
-                <div class="card-us md:w-[30%] flex flex-col lg:pt-2 lg:pb-2 items-center lg: gap-2 bg-[color-mix(in_srgb,var(--color-superficie)_15%,transparent)] rounded-xs">
+                <div class="card-us md:w-[30%] flex flex-col lg:pt-2 lg:pb-2 items-center lg: gap-2 bg-secundario shadow-sm shadow-black rounded-xs">
                     <div class="container-icon-us">
                         <ion-icon class="icon-card-us text-superficie text-8xl md:text-5xl" name="globe-outline"></ion-icon>
                     </div>
@@ -93,55 +94,66 @@
             <img src="/src/assets/images/business.jpg" alt="Negocio" class="img-us w-9/12 m-auto">
         </div>
     </section>
-    <section id="Portafolio" class="bg-fondoBlanco pt-10 pb-10 flex flex-col items-center">
-        <h1 class="title-section-portafolio h1TitleSections m-12 text-center">
+    <section id="Portafolio" class="bg-linear-to-b from-[#0A82B8] via-[#39A9D0] to-[#8DD3E8] pt-10 pb-10 flex flex-col items-center">
+        <h1 class="title-section-portafolio h1TitleSections m-12 text-center text-superficie">
             Portafolio
         </h1>
-        <p class="subtitle-portafolio sectionIntroduction mt-0 mb-12">
+        <p class="subtitle-portafolio sectionIntroduction mt-0 mb-12 text-superficie text-center w-11/12">
             Una muestra de lo que podemos crear.
         </p>
-        <div class="container-proyects w-[95%] md:grid md:grid-cols-2 lg:items-center">
-            <div class="img-proyect-one w-[80%] m-auto md:w-full">
+        <div class="container-proyects w-[90%] bg-[url('/src/assets/images/templateSinergia.jpg')] bg-cover bg-center h-125 md:h-full md:bg-none md:grid md:grid-cols-2 md:justify-center md:gap-3">
+            <div class="hidden md:block img-proyect-one w-[80%] m-auto md:w-full">
                 <img src="/src/assets/images/templateSinergia.jpg" alt="Sinergia Digital" class="md:m-auto">
             </div>
-            <div class="proyect-one flex flex-col items-center gap-6 bg-amber-100">
-                <h2 class="title-proyect-one serviceCardTitle text-center bg-amber-300">
+            <div class="proyect-one flex flex-col items-center justify-between gap-6 h-125 md:h-full md:justify-evenly">
+                <h2 class="title-proyect-one serviceCardTitle text-center text-textoFuerte md:text-superficie">
                     Sinergia Digital
                 </h2>
-                <p class="description-proyect-one smallText text-center bg-amber-700 w-11/12">
+                <p class="hidden md:block description-proyect-one smallText text-center text-superficie w-11/12">
                     Diseño y desarrollo de una plataforma web de alta velocidad y 100% responsiva, integrada con panel de control dinámico y sincronización en tiempo real con Google Business. Un ecosistema digital completo que centraliza la captación de clientes y automatiza la gestión interna sin fricciones.
                 </p>
-                <div class="container-characteristics bg-green-400 flex flex-row content-center gap-3">
-                    <div class="characteristics-cards bg-green-800 w-[95%] flex flex-col items-center">
-                        <div class="icon-card-char bg-blue-500 w-1/2 mt-2 flex flex-col items-center">
-                            <ion-icon class="iconCard text-4xl" name="phone-portrait-outline"></ion-icon>
+                <div class="container-tecnologics-proyect flex flex-row items-center gap-10">
+                    <div class="icon-tecnologi bg-[color-mix(in_srgb,var(--color-secundario)_50%,transparent)] backdrop-blur-md shadow-sm shadow-black w-10 h-10 flex flex-col items-center justify-center">
+                        <i class="fa-brands text-superficie text-4xl fa-html5"></i>
+                    </div>
+                    <div class="icon-tecnologi bg-[color-mix(in_srgb,var(--color-secundario)_50%,transparent)] backdrop-blur-md shadow-sm shadow-black w-10 h-10 flex flex-col items-center justify-center">
+                        <i class="fa-brands text-superficie text-4xl fa-square-js"></i>
+                    </div>
+                    <div class="icon-tecnologi bg-[color-mix(in_srgb,var(--color-secundario)_50%,transparent)] backdrop-blur-md shadow-sm shadow-black w-10 h-10 flex flex-col items-center justify-center">
+                        <i class="fa-brands text-superficie text-4xl fa-node-js"></i>
+                    </div>
+                </div>
+                <div class="container-characteristics flex flex-row content-center gap-3">
+                    <div class="characteristics-cards bg-[color-mix(in_srgb,var(--color-secundario)_50%,transparent)] backdrop-blur-md shadow-md shadow-black w-[95%] flex flex-col items-center">
+                        <div class="icon-card-char w-1/2 mt-2 flex flex-col items-center">
+                            <ion-icon class="iconCard text-superficie text-4xl" name="phone-portrait-outline"></ion-icon>
                         </div>
-                        <h2 class="title-card-char highlightTextBody">
+                        <h2 class="title-card-char text-superficie highlightTextBody">
                             Responsive.
                         </h2>
-                        <p class="description-char-card smallText text-center">
+                        <p class="description-char-card text-superficie smallText text-center">
                             Adaptable a cualquier dispositivo.
                         </p>
                     </div>
-                    <div class="characteristics-cards bg-green-800 w-[95%] flex flex-col items-center">
-                        <div class="icon-card-char bg-blue-500 w-1/2 mt-2 flex flex-col items-center">
-                            <ion-icon class="iconCard text-4xl" name="hardware-chip-outline"></ion-icon>
+                    <div class="characteristics-cards bg-[color-mix(in_srgb,var(--color-secundario)_50%,transparent)] backdrop-blur-md shadow-md shadow-black w-[95%] flex flex-col items-center">
+                        <div class="icon-card-char w-1/2 mt-2 flex flex-col items-center">
+                            <ion-icon class="iconCard text-superficie text-4xl" name="hardware-chip-outline"></ion-icon>
                         </div>
-                        <h2 class="title-card-char highlightTextBody">
+                        <h2 class="title-card-char text-superficie highlightTextBody">
                             Dinámico.
                         </h2>
-                        <p class="description-char-card smallText text-center">
+                        <p class="description-char-card text-superficie smallText text-center">
                             Experiencia interactiva.
                         </p>
                     </div>
-                    <div class="characteristics-cards bg-green-800 w-[95%] flex flex-col items-center">
-                        <div class="icon-card-char bg-blue-500 w-1/2 mt-2 flex flex-col items-center">
-                            <ion-icon class="iconCard text-4xl" name="speedometer-outline"></ion-icon>
+                    <div class="characteristics-cards bg-[color-mix(in_srgb,var(--color-secundario)_50%,transparent)] backdrop-blur-md shadow-md shadow-black w-[95%] flex flex-col items-center">
+                        <div class="icon-card-char w-1/2 mt-2 flex flex-col items-center">
+                            <ion-icon class="iconCard text-superficie text-4xl" name="speedometer-outline"></ion-icon>
                         </div>
-                        <h2 class="title-card-char highlightTextBody">
+                        <h2 class="title-card-char text-superficie highlightTextBody">
                             Optimizado.
                         </h2>
-                        <p class="description-char-card smallText text-center">
+                        <p class="description-char-card text-superficie smallText text-center">
                             Rendimiento y accesibilidad.
                         </p>
                     </div>
